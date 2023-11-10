@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <link rel="stylesheet" type="text/css" href="meal.css">
+</head>
+<body>
+    <header>
+        <h1 id="recipeName">Recipe Name</h1>
+    </header>
+    <div id="content">
+        <div class="row">
+            <div id="image" class="column">
+                <img src="" id="recipeImage" alt="Recipe Image">
+            </div>
+        </div>
+        <div class="row">
+            <div id="ingredients" class="column">
+                <h2>Ingredients</h2>
+                <ul id="ingredientList">
+                    <!-- Ingredients will be dynamically added here -->
+                </ul>
+            </div>
+            <div id="instructions" class="column">
+                <h2>Instructions</h2>
+                <ol id="instructionList">
+                    <!-- Instructions will be dynamically added here -->
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div id="tags" class="column">
+                <h2>Tags</h2>
+                <ul id="tagList">
+                    <!-- Tags will be dynamically added here -->
+                </ul>
+            </div>
+            <div id="source" class="column">
+                <h2>Source</h2>
+                <a id="sourceLink" href="#">Recipe Source</a>
+            </div>
+            <div id="youtube" class="column">
+                <h2>YouTube</h2>
+                <a id="ClickHere" href="#">Click Here</a>
+            </div>
+        </div>
+        <button onclick="goToNextPage()">Home</button>
+    </div>
+
+    <script src="meal.js"></script>
+    <script>
+        function goToNextPage() {
+          // Add the URL of the next page
+          window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

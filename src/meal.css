@@ -1,0 +1,119 @@
+p {
+    color: #F5FFFA;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('meal2.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+    background-size: cover; /* Adjust as needed */
+    background-position: center center; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  
+  h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #d9534f; /* Red for heading text */
+  }
+  
+  header {
+    background-color: #f0ad4e; /* Orange for header background */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #content {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+    padding-left: 30px;
+  }
+  
+  #ingredients, #instructions, #tags, #source, #youtube {
+    margin: 10px;
+  }
+  
+  #recipeImage {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  #tags ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #tags li {
+    background-color: #ff4136; /* Red for tags background */
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 12px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #sourceLink, #ClickHere {
+    text-decoration: none;
+    font-weight: bold;
+    color: #f0ad4e; /* Orange for links */
+  }
+  
+  #sourceLink:hover, #ClickHere:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

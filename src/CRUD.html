@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="crud.css" />
+
+  </head>
+  <body>
+    <header>
+      <h1>Plan Your Meal</h1>
+    </header>
+    <div class="mainWrapper">
+    
+      <h2>CRUD File!</h2>
+
+      <form>
+        <div class="form-group">
+          <label>File name</label>
+          <input id="fileName" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label>Content</label>
+          <textarea id="fileContents" class="form-control" rows="5"></textarea>
+
+        </div>
+      </form>
+      <button id="btnCreate" class="btn btn-default">Create</button>
+      <button id="btnRead" class="btn btn-default">Read</button>
+      <button id="btnUpdate" class="btn btn-default">Update</button>
+      <button id="btnDelete" class="btn btn-default">Delete</button>
+
+    </div>
+    <button id="home" onclick="goToNextPage()">Home</button>
+
+    <script src="main.js"></script>
+    <script>
+        function goToNextPage() {
+          // Add the URL of the next page
+          window.location.href = 'index.html'
+        }
+    </script>
+      
+  </body>
+</html>

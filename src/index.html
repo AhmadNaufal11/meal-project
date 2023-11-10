@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 id="home">🍽️ Culinary Delights Hub</h1>
+    <section id="about">
+      <h2>Welcome to Our Culinary World</h2>
+      <p>Explore the flavors and delights of our carefully crafted meals. From sizzling meats to savory vegetarian dishes, we take pride in offering a diverse menu that caters to every palate. Your journey into the world of culinary excellence begins here!</p>
+    </section>    
+    <section id="menu">
+      <h2>please choose a menu</h2>
+      <div class="dropdown">
+        <button id="dropdownButton" class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="#" onclick="fetchDataByCategory('Beef')">Beef</a>
+          <a href="#" onclick="fetchDataByCategory('Chicken')">Chicken</a>
+          <a href="#" onclick="fetchDataByCategory('Lamb')">Lamb</a>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Meal Names</th>
+            <th>Image</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="strCategory"></td>
+            <td id="strName"></td>
+            <td id="mealImage"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="goToNextPage()">Meal Planner</button>
+    </section>
+    <script src="script.js"></script>
+    <script>
+      function goToNextPage() {
+        // Add the URL of the next page
+        window.location.href = 'CRUD.html';
+      }
+    </script>
+  </body>
+</html>
